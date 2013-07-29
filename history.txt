@@ -1,0 +1,169 @@
+    1  ruby -v
+    2  irb
+    3  python -v
+    4  ls
+    5  cd /
+    6  ls
+    7  cd home
+    8  ls
+    9  cd M.\ Hashim/
+   10  ls
+   11  mkdir works
+   12  cd works
+   13  git clone https://github.com/saasbook/hw2_rottenpotatoes.git
+   14  git
+   15  git clone https://github.com/saasbook/hw2_rottenpotatoes.git
+   16  cd hw2_rottenpotatoes/
+   17  bundle install --without production
+   18  wget http://rubyforge.org/frs/download.php/43985/rubygems-1.3.0.tgz
+   19  wget http://rubyforge.org/frs/download.php/43985/rubygems-1.3.0.tgz
+   20  wget http://rubyforge.org/frs/download.php/43985/rubygems-1.3.0.tgz
+   21  tar -xzf rubygems-1.3.0.tgz
+   22  ls
+   23  cp rubygems-1.3.0 works
+   24  ls works
+   25  cd rubygems-1.3.0/
+   26  ruby setup.rb 
+   27  cd ..
+   28  wget http://rubyforge.org/frs/download.php/76729/rubygems-1.8.25.tgz
+   29  tar -xzf rubygems-1.8.25.tgz 
+   30  cd rubygems-1.8.25/
+   31  ruby setup.rb
+   32  gem
+   33  gem -v
+   34  gem install rails
+   35  gem install bundler
+   36  bundle install --without production
+   37  gem install bundle
+   38  bundle install --without production
+   39  bundle install --without productioncd ..
+   40  cd..
+   41  cd ..
+   42  bundle install --without productioncd ..
+   43  bundle install --without production
+   44  localhost:3000/movies
+   45  ping localhost:3000/movies
+   46  ping localhost:3000/movies
+   47  ping localhost:3000/movies
+   48  cd works/
+   49  Bundler::GemfileNotFound
+   50  cd ..
+   51  ls
+   52  man rm
+   53  rm rubygems-1.3.0.tgz 
+   54  ls
+   55  cd rubygems-1.8.25/
+   56  ls
+   57  bundle install --without production
+   58  gem install bundle
+   59  bundle
+   60  cd /
+   61  gem install bundle
+   62  bundle install --without production
+   63  gem install bundler
+   64  bundler install
+   65  bundler
+   66  bundle
+   67  apt-cache
+   68  bundle --version
+   69  bundle install --without production
+   70  bundle init
+   71  bundle install --without production
+   72  bundle exec rake db:migrate
+   73  cd /home/M.\ Hashim/
+   74  cd works/
+   75  ls
+   76  cd hw2_rottenpotatoes/
+   77  ls
+   78  bundle install --without production
+   79  bundle install --without production
+   80  q
+   81  gem install linecache19-0.5.12.gem 
+   82  ruby -v
+   83  echo PATH
+   84  echo $PATH
+   85  gem install linecache19-0.5.13.gem 
+   86  bundle install --without production
+   87  (curl -L https://raw.github.com/gist/1333785)
+   88  bundle install --without production
+   89  bundle install --without production
+   90  bundle install --without production
+   91  bundle update therubyracer libv8
+   92  bundle update therubyracer libv8
+   93  gem uninstall libv8
+   94  gem uninstall therubyracer
+   95  gem install therubyracer -v '0.9.9'
+   96  bundle install --without production
+   97  bundle install --without production
+   98  bundle install --without production
+   99  bundle install --without production
+  100  bundle exec rake db:migrate
+  101  bundle exec rake db:seed
+  102  rails server
+  103  wget -qO- https://toolbelt.heroku.com/install.sh | sh
+  104  heroku login
+  105  ls /usr/local/
+  106  wget -qO- https://toolbelt.heroku.com/install.sh | sh
+  107  ls
+  108  wget -qO- https://toolbelt.heroku.com/install.sh
+  109  ls
+  110  mkdir -p /usr/local/heroku
+  111  cd /usr/local/heroku/
+  112  wget -qO- http://assets.heroku.com.s3.amazonaws.com/heroku-client/heroku-client.tgz | tar xz
+  113  ls
+  114  mv heroku-client/* .
+  115  ls
+  116  rmdir heroku-client/
+  117  if [[ ":$PATH:" != *":/usr/local/heroku/bin:"* ]]; then   echo "Add the Heroku CLI to your PATH using:";   echo "$ echo 'PATH=\"/usr/local/heroku/bin:\$PATH\"' >> ~/.profile"; fi
+  118  echo 'PATH='/usr/local/heroku/bin:$PATH' >> ~/.profile
+  119  echo 'PATH="/usr/local/heroku/bin:$PATH"' >> ~/.profile
+  120  $PATH
+  121  if [[ ":$PATH:" != *":/usr/local/heroku/bin:"* ]]; then   echo "Add the Heroku CLI to your PATH using:";   echo "$ echo 'PATH=\"/usr/local/heroku/bin:\$PATH\"' >> ~/.profile"; fi
+  122  echo 'PATH="/usr/local/heroku/bin:$PATH"' >> ~/.profile
+  123  echo $PATH
+  124  cat ~/.profile
+  125  vi ~/.bashrc
+  126  heroku
+  127  cd /usr/local/bin
+  128  heroku
+  129  ls
+  130  cd ..
+  131  ls
+  132  cd heroku
+  133  ls
+  134  cd bin
+  135  ls
+  136  heroku
+  137  ls
+  138  ./heroku
+  139  ./heroku login
+  140  cd ~
+  141  ls
+  142  cd works/
+  143  cd hw2_rottenpotatoes/
+  144  git init
+  145  git add .
+  146  git commit -m "init"
+  147  git config --global user.name "stormvirux"
+  148  git config --global user.email mthaha1989@gmail.com
+  149  git commit --amend --reset-author
+  150  git commit -m "init"
+  151  /usr/local/heroku/bin/./heroku  create
+  152  git push heroku master
+  153  git commit -m "init"
+  154  git commit -a
+  155  git commit -a
+  156  git push heroku master
+  157  git commit -a
+  158  git push heroku master
+  159  /usr/local/heroku/bin/./heroku ps:scale web=1
+  160  heroku ps
+  161  /usr/local/heroku/bin/./heroku ps
+  162  heroku open
+  163  /usr/local/heroku/bin/./heroku open
+  164  /usr/local/heroku/bin/./heroku run rake db:seed
+  165  /usr/local/heroku/bin/./heroku run rake db:migrate
+  166  /usr/local/heroku/bin/./heroku run rake db:seed
+  167  /usr/local/heroku/bin/./heroku run rake db:migrate
+  168  history
+  169  history > history.txt
