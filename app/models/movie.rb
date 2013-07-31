@@ -1,7 +1,7 @@
 class Movie < ActiveRecord::Base
   def self.filtered(params)
     movies = Movie
-    #movies=movies.all.title.sort 
+    movies=movies.order("params[:sort] DESC")
 	movies.all
   end
 end
