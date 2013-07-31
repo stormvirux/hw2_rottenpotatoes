@@ -7,6 +7,7 @@ class MoviesController < ApplicationController
   end
 
   def index
+    @sort=params[:sort]
     filters={:sort=>""}
 	redirect = false
     filters.each do |filter, default|
