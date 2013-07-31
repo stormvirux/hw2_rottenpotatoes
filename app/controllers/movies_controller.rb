@@ -7,7 +7,7 @@ class MoviesController < ApplicationController
   end
 
   def index
-    filters={:sort=""}
+    filters={:sort=>""}
 	redirect = false
     filters.each do |filter, default|
       if params[filter].blank?
