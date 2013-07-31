@@ -5,7 +5,8 @@ Rottenpotatoes::Application.routes.draw do
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
   # Keep in mind you can assign values other than :controller and :action
-    match 'movies/:sort' => 'movies#index'
+    #match 'movies/:id' => "movies#show"
+	match 'movies/:sort' => 'movies#index'
 	match 'movies/'=> 'movies#index'
   # Sample of named route:
   #   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase
