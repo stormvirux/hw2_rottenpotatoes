@@ -1121,3 +1121,514 @@ Served asset /application.js - 304 Not Modified (15ms)
 
 Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-31 12:08:26 +0300
 Served asset /jquery_ujs.js - 304 Not Modified (15ms)
+
+
+Started GET "/movies?sort=release_date" for 127.0.0.1 at 2013-07-31 12:17:16 +0300
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"release_date"}
+Completed 500 Internal Server Error in 47ms
+
+NameError (undefined local variable or method `redirect' for #<MoviesController:0x22266e58>):
+  app/controllers/movies_controller.rb:23:in `index'
+
+Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (15.6ms)
+Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.0ms)
+Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (140.6ms)
+
+
+Started GET "/movies?sort=release_date" for 127.0.0.1 at 2013-07-31 12:17:56 +0300
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"release_date"}
+Redirected to http://127.0.0.1:3000/movies?sort=release_date
+  [1m[35mMovie Load (0.0ms)[0m  SELECT "movies".* FROM "movies" ORDER BY release_date ASC
+Completed 302 Found in 31ms
+
+
+Started GET "/movies?sort=release_date" for 127.0.0.1 at 2013-07-31 12:17:56 +0300
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"release_date"}
+Redirected to http://127.0.0.1:3000/movies?sort=release_date
+  [1m[36mMovie Load (0.0ms)[0m  [1mSELECT "movies".* FROM "movies" ORDER BY release_date ASC[0m
+Completed 302 Found in 16ms
+
+
+Started GET "/movies?sort=release_date" for 127.0.0.1 at 2013-07-31 12:17:57 +0300
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"release_date"}
+Redirected to http://127.0.0.1:3000/movies?sort=release_date
+  [1m[35mMovie Load (15.6ms)[0m  SELECT "movies".* FROM "movies" ORDER BY release_date ASC
+Completed 302 Found in 62ms
+
+
+Started GET "/movies?sort=release_date" for 127.0.0.1 at 2013-07-31 12:17:57 +0300
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"release_date"}
+Redirected to http://127.0.0.1:3000/movies?sort=release_date
+  [1m[36mMovie Load (15.6ms)[0m  [1mSELECT "movies".* FROM "movies" ORDER BY release_date ASC[0m
+Completed 302 Found in 47ms
+
+
+Started GET "/movies?sort=release_date" for 127.0.0.1 at 2013-07-31 12:17:57 +0300
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"release_date"}
+Redirected to http://127.0.0.1:3000/movies?sort=release_date
+  [1m[35mMovie Load (0.0ms)[0m  SELECT "movies".* FROM "movies" ORDER BY release_date ASC
+Completed 302 Found in 47ms
+
+
+Started GET "/movies?sort=release_date" for 127.0.0.1 at 2013-07-31 12:17:58 +0300
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"release_date"}
+Redirected to http://127.0.0.1:3000/movies?sort=release_date
+  [1m[36mMovie Load (0.0ms)[0m  [1mSELECT "movies".* FROM "movies" ORDER BY release_date ASC[0m
+Completed 302 Found in 31ms
+
+
+Started GET "/movies?sort=release_date" for 127.0.0.1 at 2013-07-31 12:17:58 +0300
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"release_date"}
+Redirected to http://127.0.0.1:3000/movies?sort=release_date
+  [1m[35mMovie Load (0.0ms)[0m  SELECT "movies".* FROM "movies" ORDER BY release_date ASC
+Completed 302 Found in 47ms
+
+
+Started GET "/movies?sort=release_date" for 127.0.0.1 at 2013-07-31 12:17:59 +0300
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"release_date"}
+Redirected to http://127.0.0.1:3000/movies?sort=release_date
+  [1m[36mMovie Load (0.0ms)[0m  [1mSELECT "movies".* FROM "movies" ORDER BY release_date ASC[0m
+Completed 302 Found in 47ms
+
+
+Started GET "/movies?sort=release_date" for 127.0.0.1 at 2013-07-31 12:17:59 +0300
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"release_date"}
+Redirected to http://127.0.0.1:3000/movies?sort=release_date
+  [1m[35mMovie Load (0.0ms)[0m  SELECT "movies".* FROM "movies" ORDER BY release_date ASC
+Completed 302 Found in 31ms
+
+
+Started GET "/movies?sort=release_date" for 127.0.0.1 at 2013-07-31 12:18:00 +0300
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"release_date"}
+Redirected to http://127.0.0.1:3000/movies?sort=release_date
+  [1m[36mMovie Load (15.6ms)[0m  [1mSELECT "movies".* FROM "movies" ORDER BY release_date ASC[0m
+Completed 302 Found in 31ms
+
+
+Started GET "/movies?sort=release_date" for 127.0.0.1 at 2013-07-31 12:18:00 +0300
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"release_date"}
+Redirected to http://127.0.0.1:3000/movies?sort=release_date
+  [1m[35mMovie Load (15.6ms)[0m  SELECT "movies".* FROM "movies" ORDER BY release_date ASC
+Completed 302 Found in 31ms
+
+
+Started GET "/movies?sort=release_date" for 127.0.0.1 at 2013-07-31 12:18:00 +0300
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"release_date"}
+Redirected to http://127.0.0.1:3000/movies?sort=release_date
+  [1m[36mMovie Load (0.0ms)[0m  [1mSELECT "movies".* FROM "movies" ORDER BY release_date ASC[0m
+Completed 302 Found in 31ms
+
+
+Started GET "/movies?sort=release_date" for 127.0.0.1 at 2013-07-31 12:18:01 +0300
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"release_date"}
+Redirected to http://127.0.0.1:3000/movies?sort=release_date
+  [1m[35mMovie Load (15.6ms)[0m  SELECT "movies".* FROM "movies" ORDER BY release_date ASC
+Completed 302 Found in 47ms
+
+
+Started GET "/movies?sort=release_date" for 127.0.0.1 at 2013-07-31 12:18:01 +0300
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"release_date"}
+Redirected to http://127.0.0.1:3000/movies?sort=release_date
+  [1m[36mMovie Load (15.6ms)[0m  [1mSELECT "movies".* FROM "movies" ORDER BY release_date ASC[0m
+Completed 302 Found in 31ms
+
+
+Started GET "/movies?sort=release_date" for 127.0.0.1 at 2013-07-31 12:18:02 +0300
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"release_date"}
+Redirected to http://127.0.0.1:3000/movies?sort=release_date
+  [1m[35mMovie Load (0.0ms)[0m  SELECT "movies".* FROM "movies" ORDER BY release_date ASC
+Completed 302 Found in 16ms
+
+
+Started GET "/movies?sort=release_date" for 127.0.0.1 at 2013-07-31 12:18:02 +0300
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"release_date"}
+Redirected to http://127.0.0.1:3000/movies?sort=release_date
+  [1m[36mMovie Load (15.6ms)[0m  [1mSELECT "movies".* FROM "movies" ORDER BY release_date ASC[0m
+Completed 302 Found in 47ms
+
+
+Started GET "/movies?sort=release_date" for 127.0.0.1 at 2013-07-31 12:18:02 +0300
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"release_date"}
+Redirected to http://127.0.0.1:3000/movies?sort=release_date
+  [1m[35mMovie Load (0.0ms)[0m  SELECT "movies".* FROM "movies" ORDER BY release_date ASC
+Completed 302 Found in 31ms
+
+
+Started GET "/movies?sort=release_date" for 127.0.0.1 at 2013-07-31 12:18:03 +0300
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"release_date"}
+Redirected to http://127.0.0.1:3000/movies?sort=release_date
+  [1m[36mMovie Load (15.6ms)[0m  [1mSELECT "movies".* FROM "movies" ORDER BY release_date ASC[0m
+Completed 302 Found in 31ms
+
+
+Started GET "/movies?sort=release_date" for 127.0.0.1 at 2013-07-31 12:18:03 +0300
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"release_date"}
+Redirected to http://127.0.0.1:3000/movies?sort=release_date
+  [1m[35mMovie Load (15.6ms)[0m  SELECT "movies".* FROM "movies" ORDER BY release_date ASC
+Completed 302 Found in 47ms
+
+
+Started GET "/movies?sort=release_date" for 127.0.0.1 at 2013-07-31 12:18:04 +0300
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"release_date"}
+Redirected to http://127.0.0.1:3000/movies?sort=release_date
+  [1m[36mMovie Load (15.6ms)[0m  [1mSELECT "movies".* FROM "movies" ORDER BY release_date ASC[0m
+Completed 302 Found in 16ms
+
+
+Started GET "/movies?sort=release_date" for 127.0.0.1 at 2013-07-31 12:18:04 +0300
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"release_date"}
+Redirected to http://127.0.0.1:3000/movies?sort=release_date
+  [1m[35mMovie Load (0.0ms)[0m  SELECT "movies".* FROM "movies" ORDER BY release_date ASC
+Completed 302 Found in 31ms
+
+
+Started GET "/movies" for 127.0.0.1 at 2013-07-31 12:18:14 +0300
+  Processing by MoviesController#index as HTML
+Redirected to http://127.0.0.1:3000/movies
+  [1m[36mMovie Load (0.0ms)[0m  [1mSELECT "movies".* FROM "movies" ORDER BY ASC[0m
+SQLite3::SQLException: no such column: ASC: SELECT "movies".* FROM "movies"  ORDER BY  ASC
+Completed 500 Internal Server Error in 31ms
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such column: ASC: SELECT "movies".* FROM "movies"  ORDER BY  ASC):
+  app/models/movie.rb:5:in `filtered'
+  app/controllers/movies_controller.rb:24:in `index'
+
+Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (15.6ms)
+Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.0ms)
+Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (93.8ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2013-07-31 12:19:16 +0300
+  Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.0ms)[0m  SELECT "movies".* FROM "movies" ORDER BY ASC
+SQLite3::SQLException: no such column: ASC: SELECT "movies".* FROM "movies"  ORDER BY  ASC
+Completed 500 Internal Server Error in 16ms
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such column: ASC: SELECT "movies".* FROM "movies"  ORDER BY  ASC):
+  app/models/movie.rb:5:in `filtered'
+  app/controllers/movies_controller.rb:24:in `index'
+
+Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.0ms)
+Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (78.1ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2013-07-31 12:19:22 +0300
+  Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.0ms)[0m  [1mSELECT "movies".* FROM "movies" ORDER BY ASC[0m
+SQLite3::SQLException: no such column: ASC: SELECT "movies".* FROM "movies"  ORDER BY  ASC
+Completed 500 Internal Server Error in 16ms
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such column: ASC: SELECT "movies".* FROM "movies"  ORDER BY  ASC):
+  app/models/movie.rb:5:in `filtered'
+  app/controllers/movies_controller.rb:24:in `index'
+
+Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (15.6ms)
+Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.0ms)
+Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (125.0ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2013-07-31 12:20:31 +0300
+  Processing by MoviesController#index as HTML
+Redirected to http://127.0.0.1:3000/movies?sort=release_date
+  [1m[35mMovie Load (15.6ms)[0m  SELECT "movies".* FROM "movies" ORDER BY release_date ASC
+Completed 302 Found in 31ms
+
+
+Started GET "/movies?sort=release_date" for 127.0.0.1 at 2013-07-31 12:20:32 +0300
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"release_date"}
+  [1m[36mMovie Load (0.0ms)[0m  [1mSELECT "movies".* FROM "movies" ORDER BY release_date ASC[0m
+Rendered movies/index.html.haml within layouts/application (93.8ms)
+Completed 200 OK in 344ms (Views: 312.5ms | ActiveRecord: 15.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-31 12:20:33 +0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-31 12:20:33 +0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-31 12:20:33 +0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-31 12:20:33 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2013-07-31 13:50:58 +0300
+  Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (15.6ms)[0m  [1mSELECT "movies".* FROM "movies" ORDER BY ASC[0m
+SQLite3::SQLException: no such column: ASC: SELECT "movies".* FROM "movies"  ORDER BY  ASC
+Completed 500 Internal Server Error in 16ms
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such column: ASC: SELECT "movies".* FROM "movies"  ORDER BY  ASC):
+  app/models/movie.rb:5:in `filtered'
+  app/controllers/movies_controller.rb:24:in `index'
+
+Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (15.6ms)
+Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (171.9ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-07-31 13:51:40 +0300
+Served asset /rails.png - 200 OK (203ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2013-07-31 13:51:40 +0300
+  Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.0ms)[0m  SELECT "movies".* FROM "movies" ORDER BY ASC
+SQLite3::SQLException: no such column: ASC: SELECT "movies".* FROM "movies"  ORDER BY  ASC
+Completed 500 Internal Server Error in 16ms
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such column: ASC: SELECT "movies".* FROM "movies"  ORDER BY  ASC):
+  app/models/movie.rb:5:in `filtered'
+  app/controllers/movies_controller.rb:24:in `index'
+
+Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (15.6ms)
+Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (46.9ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2013-07-31 13:51:41 +0300
+  Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.0ms)[0m  [1mSELECT "movies".* FROM "movies" ORDER BY ASC[0m
+SQLite3::SQLException: no such column: ASC: SELECT "movies".* FROM "movies"  ORDER BY  ASC
+Completed 500 Internal Server Error in 0ms
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such column: ASC: SELECT "movies".* FROM "movies"  ORDER BY  ASC):
+  app/models/movie.rb:5:in `filtered'
+  app/controllers/movies_controller.rb:24:in `index'
+
+Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.0ms)
+Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (78.1ms)
+
+
+Started GET "/rails/info/properties" for 127.0.0.1 at 2013-07-31 13:51:41 +0300
+  [1m[35m (0.0ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+  Processing by Rails::InfoController#properties as HTML
+Rendered inline template (0.0ms)
+Completed 200 OK in 47ms (Views: 46.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2013-07-31 13:52:32 +0300
+  Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.0ms)[0m  [1mSELECT "movies".* FROM "movies" ORDER BY ASC[0m
+SQLite3::SQLException: no such column: ASC: SELECT "movies".* FROM "movies"  ORDER BY  ASC
+Completed 500 Internal Server Error in 16ms
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such column: ASC: SELECT "movies".* FROM "movies"  ORDER BY  ASC):
+  app/models/movie.rb:5:in `filtered'
+  app/controllers/movies_controller.rb:24:in `index'
+
+Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.0ms)
+Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (31.2ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2013-07-31 13:52:41 +0300
+  Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.0ms)[0m  SELECT "movies".* FROM "movies" ORDER BY ASC
+SQLite3::SQLException: no such column: ASC: SELECT "movies".* FROM "movies"  ORDER BY  ASC
+Completed 500 Internal Server Error in 0ms
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such column: ASC: SELECT "movies".* FROM "movies"  ORDER BY  ASC):
+  app/models/movie.rb:5:in `filtered'
+  app/controllers/movies_controller.rb:24:in `index'
+
+Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.0ms)
+Rendered /usr/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (62.5ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2013-07-31 13:53:37 +0300
+  Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.0ms)[0m  [1mSELECT "movies".* FROM "movies" ORDER BY title ASC[0m
+Rendered movies/index.html.haml within layouts/application (281.2ms)
+Completed 200 OK in 578ms (Views: 546.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-31 13:53:38 +0300
+Served asset /application.css - 200 OK (15ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-31 13:53:38 +0300
+Served asset /jquery.js - 200 OK (93ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-31 13:53:38 +0300
+Served asset /application.js - 200 OK (328ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-31 13:53:39 +0300
+Served asset /jquery_ujs.js - 200 OK (78ms)
+
+
+Started GET "/movies/title" for 127.0.0.1 at 2013-07-31 13:53:41 +0300
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"title"}
+  [1m[35mMovie Load (0.0ms)[0m  SELECT "movies".* FROM "movies" ORDER BY title ASC
+Rendered movies/index.html.haml within layouts/application (93.8ms)
+Completed 200 OK in 172ms (Views: 156.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-31 13:53:41 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-31 13:53:42 +0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-31 13:53:42 +0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-31 13:53:42 +0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies/title" for 127.0.0.1 at 2013-07-31 13:53:43 +0300
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"title"}
+  [1m[36mMovie Load (0.0ms)[0m  [1mSELECT "movies".* FROM "movies" ORDER BY title ASC[0m
+Rendered movies/index.html.haml within layouts/application (62.5ms)
+Completed 200 OK in 156ms (Views: 140.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-31 13:53:44 +0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-31 13:53:44 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-31 13:53:44 +0300
+Served asset /application.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-31 13:53:44 +0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies/title" for 127.0.0.1 at 2013-07-31 13:54:16 +0300
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"title"}
+  [1m[35mMovie Load (0.0ms)[0m  SELECT "movies".* FROM "movies" ORDER BY title ASC
+Rendered movies/index.html.haml within layouts/application (46.9ms)
+Completed 200 OK in 141ms (Views: 125.0ms | ActiveRecord: 15.6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-31 13:54:16 +0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-31 13:54:16 +0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-31 13:54:16 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-31 13:54:16 +0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies/title" for 127.0.0.1 at 2013-07-31 13:54:19 +0300
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"title"}
+  [1m[36mMovie Load (0.0ms)[0m  [1mSELECT "movies".* FROM "movies" ORDER BY title ASC[0m
+Rendered movies/index.html.haml within layouts/application (62.5ms)
+Completed 200 OK in 172ms (Views: 125.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-31 13:54:19 +0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-31 13:54:19 +0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-31 13:54:19 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-31 13:54:19 +0300
+Served asset /application.js - 304 Not Modified (15ms)
+
+
+Started GET "/movies/title" for 127.0.0.1 at 2013-07-31 13:54:20 +0300
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"title"}
+  [1m[35mMovie Load (0.0ms)[0m  SELECT "movies".* FROM "movies" ORDER BY title ASC
+Rendered movies/index.html.haml within layouts/application (62.5ms)
+Completed 200 OK in 141ms (Views: 125.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-31 13:54:21 +0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-31 13:54:21 +0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-31 13:54:21 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-31 13:54:21 +0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies/release_date" for 127.0.0.1 at 2013-07-31 13:55:01 +0300
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"release_date"}
+  [1m[36mMovie Load (15.6ms)[0m  [1mSELECT "movies".* FROM "movies" ORDER BY release_date ASC[0m
+Rendered movies/index.html.haml within layouts/application (218.8ms)
+Completed 200 OK in 328ms (Views: 312.5ms | ActiveRecord: 15.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-31 13:55:01 +0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-31 13:55:01 +0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-31 13:55:01 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-31 13:55:02 +0300
+Served asset /application.js - 304 Not Modified (0ms)

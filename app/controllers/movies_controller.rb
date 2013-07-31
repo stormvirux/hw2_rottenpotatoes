@@ -20,7 +20,6 @@ class MoviesController < ApplicationController
       end
       session[filter] = params[filter]
     end
-	#@movies = Movie.all
 	redirect_to movies_path(:sort => params[:sort]) if redirect
     @movies = Movie.filtered(params)	
   end
