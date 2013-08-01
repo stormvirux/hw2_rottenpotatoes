@@ -21,13 +21,10 @@ class MoviesController < ApplicationController
 	  @ratings=params[:ratings].keys
 	end
 	@sort=params[:sort]
-	#if params[:ratings]
-	 # @clicked=params[:ratings]
-	#end
 	if @sort =="title"
-	  @movies=Movie.order("title  ASC")
+	  @movies=Movie.where(rating: @ratings).order("title  ASC")
 	else 
-	  @movies=Movie.order("release_date  ASC")
+	  @movies=Movie.where(rating: @ratings).order("release_date  ASC")
 	end
 	#@movies=Movie.disp
   end
