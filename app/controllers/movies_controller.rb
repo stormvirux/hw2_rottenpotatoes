@@ -14,43 +14,19 @@ class MoviesController < ApplicationController
   end
 
   def index
-	redirect=false
-	
-	if params[:sort]
-      @sort = params[:sort]
-    elsif session[:sort]
-      @sort = session[:sort]
-      redirect = true
-    else
-      @sort = :id
-      redirect = true
-    end
-	
-	if params[:ratings]
-	  @ratings=params[:ratings]
-	elsif session[:ratings]
-	  @ratings =session[:ratings]
-	  redirect=true
-	else
+	if params[:ratings]==nil
 	  params[:ratings]={"G"=>1,"R"=>1,"PG-13"=>1,"PG"=>1}
-	  @ratings=params[:ratings]
-	  redirect=true
+	  @ratings=params[:ratings].keys
+	else
+	  @ratings=params[:ratings].keys
 	end
-	
-	if redirect 
-	  redirect_to movies_path(:sort=>@sort,:ratings=>@ratings)
-	end
-	
+	@sort=params[:sort]
 	if @sort =="title"
 	  @movies=Movie.order("title  ASC").where(rating: @ratings)
 	else 
 	  @movies=Movie.where(rating: @ratings).order("release_date  ASC")
 	end
 	#@movies=Movie.disp
-	flash[:sort] = @sort
-    flash[:ratings] = @ratings
-    session[:sort] = @sort
-    session[:ratings] = @ratings
   end
 
   def new
