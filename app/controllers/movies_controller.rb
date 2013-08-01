@@ -8,21 +8,12 @@ class MoviesController < ApplicationController
 
   def index
     @sort=params[:sort]
-    filters={:sort=>""}
-	redirect = false
-    filters.each do |filter, default|
-      if params[filter].blank?
-        if !session[filter].blank?
-          redirect = true
-          params[filter] = session[filter]
-        else
-          params[filter] = default
-        end
-      end
-      session[filter] = params[filter]
-    end
-	redirect_to movies_path(:sort => params[:sort]) if redirect
-    @movies = Movie.filtered(params)	
+	@all_ratings=Movie.find(ratings).uniq
+    if @sort =="title"
+	  @movies=Movie.find(:all).order("title  ASC")
+	else 
+	  @movies=Movie.find(:all).order("release_date  ASC")
+	end
   end
 
   def new
