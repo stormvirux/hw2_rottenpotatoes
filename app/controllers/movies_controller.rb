@@ -12,14 +12,14 @@ class MoviesController < ApplicationController
   end
 
   def index
-    @ratings=@all_ratings
-	if params[:sort]==nil
-	  params[:sort]={"G"=>1,"R"=>1,"PG-13"=>1,"PG"=>1}
-	  @ratings=params[:sort].keys
+    @all_ratings=Movie.ratings
+	@ratings=@all_ratings
+	if params[:ratings]==nil
+	  params[:ratings]={"G"=>1,"R"=>1,"PG-13"=>1,"PG"=>1}
+	  @ratings=params[:ratings].keys
 	else
-	  @ratings=params[:sort].keys
+	  @ratings=params[:ratings].keys
 	end
-	@all_ratings=Movie.ratings
 	@sort=params[:sort]
 	#if params[:ratings]
 	 # @clicked=params[:ratings]
