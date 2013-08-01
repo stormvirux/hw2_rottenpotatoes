@@ -8,11 +8,11 @@ class MoviesController < ApplicationController
 
   def index
     @sort=params[:sort]
-	@all_ratings=Movie.find(ratings).uniq
+	#@all_ratings=Movie.find(ratings).uniq
     if @sort =="title"
-	  @movies=Movie.find(:all).order("title  ASC")
+	  @movies=Movie.order("title  ASC")
 	else 
-	  @movies=Movie.find(:all).order("release_date  ASC")
+	  @movies=Movie.order("release_date  ASC")
 	end
   end
 
