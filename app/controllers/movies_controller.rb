@@ -1,9 +1,11 @@
 class MoviesController < ApplicationController
 
- #def initialize
-  #  @all_ratings=Movie.ratings
-   # @ratings=@all_ratings
- #end
+ def initialize
+    @all_ratings=Movie.ratings
+	@ratings=@all_ratings
+    @sort=:id
+	super
+ end
   
   def show
     id = params[:id] # retrieve movie ID from URI route
@@ -12,21 +14,43 @@ class MoviesController < ApplicationController
   end
 
   def index
-    @all_ratings=Movie.ratings
-	@ratings=@all_ratings
-	if params[:ratings]==nil
-	  params[:ratings]={"G"=>1,"R"=>1,"PG-13"=>1,"PG"=>1}
-	  @ratings=params[:ratings].keys
+	redirect=false
+	
+	if params[:sort]
+      @sort = params[:sort]
+    elsif session[:sort]
+      @sort = session[:sort]
+      redirect = true
+    else
+      @sort = :id
+      redirect = true
+    end
+	
+	if params[:ratings]
+	  @ratings=params[:ratings]
+	elsif session[:ratings]
+	  @ratings =session[:ratings]
+	  redirect=true
 	else
-	  @ratings=params[:ratings].keys
+	  params[:ratings]={"G"=>1,"R"=>1,"PG-13"=>1,"PG"=>1}
+	  @ratings=params[:ratings]
+	  redirect=true
 	end
-	@sort=params[:sort]
+	
+	if redirect 
+	  redirect_to movies_path(:sort=>@sort,:ratings=>@ratings)
+	end
+	
 	if @sort =="title"
-	  @movies=Movie.where(rating: @ratings).order("title  ASC")
+	  @movies=Movie.order("title  ASC").where(rating: @ratings)
 	else 
 	  @movies=Movie.where(rating: @ratings).order("release_date  ASC")
 	end
 	#@movies=Movie.disp
+	flash[:sort] = @sort
+    flash[:ratings] = @ratings
+    session[:sort] = @sort
+    session[:ratings] = @ratings
   end
 
   def new
